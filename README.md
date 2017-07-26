@@ -28,4 +28,7 @@ Example
 jmeter -t "One Thread N Sampler One Minute Test Plan.jmx" -n -l result.jtl -Jp.target.server=www.example.com
 ```
 
-Note: use Test Plan :: Thread Group :: scheduler :: Duration
+Note
+
+* Use Test Plan :: Thread Group :: Loop Count :: Forever
+* Use Test Plan :: Thread Group :: Scheduler :: Duration :: 60
