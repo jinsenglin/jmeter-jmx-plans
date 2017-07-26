@@ -30,5 +30,24 @@ jmeter -t "One Thread N Sampler One Minute Test Plan.jmx" -n -l result.jtl -Jp.t
 
 Note
 
-* Use Test Plan :: Thread Group :: Loop Count :: Forever
-* Use Test Plan :: Thread Group :: Scheduler :: Duration :: 60
+* Use Test Plan > Thread Group :: Loop Count :: Forever
+* Use Test Plan > Thread Group :: Scheduler :: Duration :: 60
+
+---
+
+Example
+
+* Start in non-GUI mode
+* Save result data log as result.jtl file
+* Generate one minute loading
+* Control sampler rate with one sampler per second
+
+```
+jmeter -t "One Thread One Sampler Per Second One Minute Test Plan.jmx" -n -l result.jtl -Jp.target.server=www.example.com
+```
+
+Note
+
+* Use Test Plan > Thread Group :: Loop Count :: Forever
+* Use Test Plan > Thread Group :: Scheduler :: Duration :: 60
+* Use Test Plan > Thread Group > Timer :: jp@gc - Throughput Shaping Timer
