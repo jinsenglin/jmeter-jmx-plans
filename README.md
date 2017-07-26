@@ -48,6 +48,4 @@ jmeter -t "One Thread One Sampler Per Second One Minute Test Plan.jmx" -n -l res
 
 Note
 
-* Use Test Plan > Thread Group :: Loop Count :: Forever
-* Use Test Plan > Thread Group :: Scheduler :: Duration :: 60
-* Use Test Plan > Thread Group > Timer :: jp@gc - Throughput Shaping Timer
+* Use Test Plan > Thread Group > Timer :: jp@gc - Throughput Shaping Timer :: (1,1,60)
