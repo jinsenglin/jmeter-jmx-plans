@@ -19,3 +19,15 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 Note
 
 * Use issue-token.sh to issue a new keystone auth token
+
+---
+
+Use make-payload.sh to generate http request body payload message
+
+```
+# 1 metric
+./make-payload.sh 1
+
+# 2 metrics
+./make-payload.sh 2
+```
