@@ -49,3 +49,25 @@ jmeter -t "One Thread One Sampler Per Second One Minute Test Plan.jmx" -n -l res
 Note
 
 * Use Test Plan > Thread Group > Timer :: jp@gc - Throughput Shaping Timer :: (1,1,60)
+
+---
+
+Example
+
+* Start in GUI mode
+* Generate one minute loading
+* Watch CPU utilization
+* Watch throughput
+
+```
+jmeter -t "PerfMon One Thread N Sampler One Minute Test Plan.jmx" -Jp.target.server=www.example.com -Jp.target.server.port=8080
+```
+
+Note
+
+* Use Test Plan > Thread Group :: Loop Count :: Forever
+* Use Test Plan > Thread Group :: Scheduler :: Duration :: 60
+* Use Test Plan > Thread Group > Listener :: jp@gc - PerfMon Metrics Collector :: limit 10 points
+* Use Test Plan > Thread Group > Listener :: jp@gc - Transactions per Second :: limit 10 points
+* Use Test Plan > Thread Group > Listener :: jp@gc - Hits per Second :: 10 points
+
