@@ -9,7 +9,12 @@ do
     echo '"name":"metric-name",'
     echo '"timestamp":1405630174123,'
     echo '"value":1.0'
-    echo '},'
+
+    if [ $i -ne $N ]; then
+        echo '},'
+    else
+        echo '}'
+    fi
 
 done
 echo ']'
