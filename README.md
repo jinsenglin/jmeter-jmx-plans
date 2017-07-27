@@ -57,7 +57,7 @@ Example
 * Start in GUI mode
 * Generate one minute loading
 * Watch CPU utilization
-* Watch throughput
+* Watch sampler throughput
 
 ```
 jmeter -t "PerfMon One Thread N Sampler One Minute Test Plan.jmx" -Jp.target.server=www.example.com -Jp.target.server.port=8080
