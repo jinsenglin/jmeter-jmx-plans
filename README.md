@@ -67,7 +67,8 @@ Note
 
 * Use Test Plan > Thread Group :: Loop Count :: Forever
 * Use Test Plan > Thread Group :: Scheduler :: Duration :: 60
-* Use Test Plan > Thread Group > Listener :: jp@gc - PerfMon Metrics Collector :: limit 10 points
-* Use Test Plan > Thread Group > Listener :: jp@gc - Transactions per Second :: limit 10 points
-* Use Test Plan > Thread Group > Listener :: jp@gc - Hits per Second :: 10 points
+* Use Test Plan > Thread Group > Listener :: jp@gc - PerfMon Metrics Collector
+* Use Test Plan > Thread Group > Listener :: jp@gc - Transactions per Second
+* Use Test Plan > Thread Group > Listener :: jp@gc - Hits per Second
+* Listener :: Settings :: Rendering :: Limit 10 points (This setting is no going to be saved in the .jmx file. Need configure it manually everytime.)
 
