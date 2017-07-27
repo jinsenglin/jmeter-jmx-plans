@@ -6,7 +6,7 @@ Example
 * Save result data log as result.jtl file
 
 ```
-jmeter -t "One Thread One Sampler Test Plan.jmx" -n -l result.jtl -Jp.target.server=www.example.com -Jp.target.server.port=8070 -Jp.keystone.auth.token=27feed73a0ce4138934e30d619b415b0
+jmeter -t "One Thread One Sampler One Metric Test Plan.jmx" -n -l result.jtl -Jp.target.server=www.example.com -Jp.target.server.port=8070 -Jp.keystone.auth.token=27feed73a0ce4138934e30d619b415b0
 ```
 
 Result

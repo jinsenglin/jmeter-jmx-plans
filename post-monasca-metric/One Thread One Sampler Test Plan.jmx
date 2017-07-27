@@ -47,7 +47,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">[&#xd;
    {&#xd;
-      &quot;name&quot;:&quot;name1&quot;,&#xd;
+      &quot;name&quot;:&quot;metric-name&quot;,&#xd;
       &quot;timestamp&quot;:1405630174123,&#xd;
       &quot;value&quot;:1.0&#xd;
    }&#xd;
