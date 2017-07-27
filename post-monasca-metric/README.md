@@ -13,7 +13,7 @@ Result
 
 ```
 timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
-1501057182180,3164,HTTP Request,200,OK,Thread Group 1-1,text,true,,11559,273,1,1,3104,0,3080
+1501132808155,89,HTTP Request,204,No Content,Thread Group 1-1,text,true,,219,485,1,1,0,0,58
 ```
 
 Note
